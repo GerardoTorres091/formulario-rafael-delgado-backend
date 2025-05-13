@@ -1,0 +1,33 @@
+# Entornos virtuales
+venv/
+.env
+.env.*
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Archivos temporales
+*.log
+*.sqlite3
+
+# VSCode y otros editores
+.vscode/
+.idea/
+.DS_Store
+
+# Archivos de sistema
+Thumbs.db
+
+# Docker
+*.pid
+*.seed
+*.bak
+docker-compose.override.yml
+
+# Archivos que puedan contener datos sensibles
+*.env
+.env.*

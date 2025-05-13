@@ -1,0 +1,14 @@
+# Framework principal para la API
+fastapi
+
+# Servidor ASGI recomendado para correr FastAPI en producción y desarrollo
+uvicorn[standard]
+
+# ORM para manejar la base de datos con SQL de forma estructurada
+sqlalchemy
+
+# Driver PostgreSQL compatible con SQLAlchemy
+psycopg2-binary
+
+# Versión fija de click, requerida por dependencias internas de uvicorn
+click==8.1.6
