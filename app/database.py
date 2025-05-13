@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 # URL de conexión a PostgreSQL
 # Formato: postgresql://usuario:contraseña@host:puerto/nombre_base
-SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@db:5432/formdb")
+SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Crea el motor de conexión
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
