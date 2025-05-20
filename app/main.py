@@ -42,9 +42,9 @@ def registrar_respuesta(
     ip = request.client.host
 
     # Verifica si ya se registró una respuesta desde esta IP
-    existe = db.query(Respuesta).filter_by(ip=ip).first()
-    if existe:
-        raise HTTPException(status_code=409, detail="Ya has respondido antes.")
+    #existe = db.query(Respuesta).filter_by(ip=ip).first()
+    #if existe:
+        #raise HTTPException(status_code=409, detail="Ya has respondido antes.")
 
     # Crea una nueva instancia del modelo con los datos enviados
     nueva = Respuesta(**data.dict(), ip=ip)
